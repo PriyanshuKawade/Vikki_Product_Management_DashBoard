@@ -1,0 +1,23 @@
+{
+  "name": "reactnode",
+  "version": "1.0.0",
+  "description": "node express crud",
+  "main": "server.js",
+  "options": {
+    "allowedHosts": ["localhost", ".localhost"],
+    "proxy": "https://localhost:3069/"
+  },
+  "scripts": {
+     "start": "node index.js",
+ "server": "nodemon index.js --ignore client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vk",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.5"
+  }
+}
